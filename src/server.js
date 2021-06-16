@@ -1,4 +1,4 @@
-const { chromium } = require('playwright');
+const { chromium } = require('playwright-chromium');
 const http = require('http');
 const httpProxy = require('http-proxy');
 

@@ -16,4 +16,4 @@ services:
       - '8164:8164'
 networks:
   default:
-    name: relay
+    name: server
