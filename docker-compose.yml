@@ -1,0 +1,19 @@
+version: '3.5'
+
+services:
+  playwright-server:
+    networks:
+      - default
+    build:
+      context: .
+    command: npm run start
+    restart: always
+    environment:
+      PLAYWRIGHT_PORT: 8164
+      SERVER_PORT: 8168
+    container_name: playwright
+    ports:
+      - '8164:8164'
+networks:
+  default:
+    name: relay
